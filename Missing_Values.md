@@ -1,5 +1,5 @@
 # MISSING VALUES
-When wanting to deal with missing values, there are three common approches:
+Examples below assume that we already have X_train, X_valid, y_train, y_valid. It is useful to first use the missing_value_info function above to know how many columns have missing values. When wanting to deal with missing values, there are three common approches:
 
 1) **Droppping Columns With Missing Values**: Have to be vary of this option. Unless most values in the dropped columns are missing, the model loses access to a lot of (potentially useful!) information with this approach.
 ![download](https://github.com/user-attachments/assets/04ef376b-4d8f-47ef-9cb3-51e820d8ac9c)
@@ -56,5 +56,3 @@ imputed_X_valid_plus = pd.DataFrame(my_imputer.transform(X_valid_plus))
 imputed_X_train_plus.columns = X_train_plus.columns
 imputed_X_valid_plus.columns = X_valid_plus.columns
 ````
-
-Examples below assume that we already have X_train, X_valid, y_train, y_valid. It is useful to first use the missing_value_info function above to know how many columns have missing values.
