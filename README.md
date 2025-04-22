@@ -1,2 +1,2 @@
 # ML.github.iox
-This Documents summarized personal notes for machine learning
+This Documents summarizes personal notes for machine learning
