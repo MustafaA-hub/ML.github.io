@@ -1,11 +1,11 @@
-# Creating Features
-It's good to keep in mind your model's own strengths and weaknesses when creating features.
+# Feature Creation
+It's good to keep in mind your model's own strengths and weaknesses when creating features. Here are some guidelines:
 
-Here are some guidelines:Linear models learn sums and differences naturally, but can't learn anything more complex.
-Ratios seem to be difficult for most models to learn. Ratio combinations often lead to some easy performance gains.
-Linear models and neural nets generally do better with normalized features. Neural nets especially need features scaled to values not too far from 0. Tree-based models (like random forests and XGBoost) can sometimes benefit from normalization, but usually much less so.
-Tree models can learn to approximate almost any combination of features, but when a combination is especially important they can still benefit from having it explicitly created, especially when data is limited.
-Counts are especially helpful for tree models, since these models don't have a natural way of aggregating information across many features at once.
+- Linear models learn sums and differences naturally, but can't learn anything more complex.
+- Ratios seem to be difficult for most models to learn. Ratio combinations often lead to some easy performance gains.
+- Linear models and neural nets generally do better with normalized features. Neural nets especially need features scaled to values not too far from 0. Tree-based models (like random forests and XGBoost) can sometimes benefit from normalization, but usually much less so.
+- Tree models can learn to approximate almost any combination of features, but when a combination is especially important they can still benefit from having it explicitly created, especially when data is limited.
+- Counts are especially helpful for tree models, since these models don't have a natural way of aggregating information across many features at once.
 
 ````Python
 df["new_feature"] = df.feature_1/df.feature_2
