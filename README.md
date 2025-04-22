@@ -1,7 +1,7 @@
 # ML.github.iox
 ![download](https://github.com/user-attachments/assets/3e92fdec-9c37-40f3-9f37-c403028e883a)
 
-````Monokai Light
+````GitHub Light
 # Missing Values: Droppping Columns With Missing Values
 # Get names of columns with missing values
 cols_with_missing = [col for col in X_train.columns
