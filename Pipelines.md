@@ -1,5 +1,5 @@
 # PIPELINES
-A pipeline bundles preprocessing and modeling steps into one single step. Examples below assume that we already have X_train, X_valid, y_train, y_valid
+A pipeline bundles preprocessing and modeling steps into one single step.
 
 1) **Preprocessing**: Preprocessing it self might have a lot of steps and so it is a good idea to bundle those steps too using 'ColumnTransformer' class. For example when preprocessing, numerical data (e.g. imputing) is processed differently from categorical data (e.g. imputing + one-hot coding).
 
@@ -7,6 +7,7 @@ A pipeline bundles preprocessing and modeling steps into one single step. Exampl
 
 3) **Create Pipeline**: We use the 'Pipeline' class to define a pipeline that bundles the preprocessing and modeling steps. After creating the pipline when we run the .fit() command on it, it will preprocess and model the training data. Next when we run the .predict() command on this pipleine, it will automatically preprocess the validation data.
 
+Examples below assume that we already have X_train, X_valid, y_train, y_valid.
 ````Python
 # Pipeline Code
 
