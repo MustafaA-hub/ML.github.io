@@ -1,6 +1,6 @@
 # ML.github.iox
 
-````AL
+````Python
 # Missing Values: Droppping Columns With Missing Values
 # Get names of columns with missing values
 cols_with_missing = [col for col in X_train.columns
