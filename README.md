@@ -1,6 +1,7 @@
 # ML.github.iox
 
-<# Missing Values: Droppping Columns With Missing Values
+'''
+# Missing Values: Droppping Columns With Missing Values
 # Get names of columns with missing values
 cols_with_missing = [col for col in X_train.columns
                      if X_train[col].isnull().any()]
@@ -19,3 +20,4 @@ imputed_X_valid = pd.DataFrame(my_imputer.transform(X_valid))
 # Imputation removed column names; put them back
 imputed_X_train.columns = X_train.columns
 imputed_X_valid.columns = X_valid.columns>
+'''
