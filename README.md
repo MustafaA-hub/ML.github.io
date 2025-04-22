@@ -1,4 +1,5 @@
 # ML.github.iox
+![download](https://github.com/user-attachments/assets/3e92fdec-9c37-40f3-9f37-c403028e883a)
 
 ````Jupyter Notebook
 # Missing Values: Droppping Columns With Missing Values
