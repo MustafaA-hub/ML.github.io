@@ -10,3 +10,8 @@ Line charts
 # Line chart showing daily global streams of 'Shape of You'
 sns.lineplot(data=spotify_data['Shape of You'], label="Shape of You")
 ````
+Bar charts
+````Python
+# Bar chart showing average arrival delay for Spirit Airlines flights by month
+sns.barplot(x=flight_data.index, y=flight_data['NK'])
+````
