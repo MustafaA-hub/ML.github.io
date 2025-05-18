@@ -35,6 +35,7 @@ Scatterplot + regression line
 ````Python
 sns.regplot(x=insurance_data['bmi'], y=insurance_data['charges'])
 ````
+![image](https://github.com/user-attachments/assets/a36bb55b-74eb-4024-82d0-0915282794bd)
 
 Scatterplot that compares three variables
 ````Python
@@ -48,3 +49,8 @@ sns.lmplot(x="bmi", y="charges", hue="smoker", data=insurance_data)
 ````
 ![image](https://github.com/user-attachments/assets/48d38991-94e4-4944-a25e-0692c69cb295)
 
+Scatterplot when a categorical variable needs to be on the main axis
+````Python
+sns.swarmplot(x=insurance_data['smoker'], y=insurance_data['charges'])
+````
+![image](https://github.com/user-attachments/assets/d311d077-4ef0-4965-bdba-b84ff0798eca)
