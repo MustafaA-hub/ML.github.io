@@ -54,3 +54,41 @@ Scatterplot when a categorical variable needs to be on the main axis
 sns.swarmplot(x=insurance_data['smoker'], y=insurance_data['charges'])
 ````
 ![image](https://github.com/user-attachments/assets/d311d077-4ef0-4965-bdba-b84ff0798eca)
+
+Histograms
+````Python
+sns.histplot(iris_data['Petal Length (cm)'])
+````
+![image](https://github.com/user-attachments/assets/6a68cad6-a1fa-469e-b3bb-15a775b21447)
+
+Histogram color coded to split the data
+hue = sets the column we'll use to split the data into different histograms
+````Python
+# Histograms for each species
+sns.histplot(data=iris_data, x='Petal Length (cm)', hue='Species')
+````
+![image](https://github.com/user-attachments/assets/d2114e05-43c4-47f5-ba91-9ea84734413a)
+
+
+Density plots = Kernal Density Estimates(kde)
+```Pyhon
+# KDE plot 
+sns.kdeplot(data=iris_data['Petal Length (cm)'], shade=True)
+````
+![image](https://github.com/user-attachments/assets/e89fec86-7b36-463c-9c3f-a6ba782cc489)
+
+2D KDE Plot
+````Python
+# 2D KDE plot
+sns.jointplot(x=iris_data['Petal Length (cm)'], y=iris_data['Sepal Width (cm)'], kind="kde")
+````
+![image](https://github.com/user-attachments/assets/18565fc2-543d-4fac-ad6b-3fcf8deeffa8)
+
+KDE Plot color coded to split the data
+hue = sets the column we'll use to split the data into different histograms
+````Python
+# KDE plots for each species
+sns.kdeplot(data=iris_data, x='Petal Length (cm)', hue='Species', shade=True)
+````
+![image](https://github.com/user-attachments/assets/d199519e-e733-4db0-ad66-0eda228c4cf3)
+
