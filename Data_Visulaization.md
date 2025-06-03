@@ -17,13 +17,14 @@ Bar charts
 # Bar chart showing average arrival delay for Spirit Airlines flights by month
 sns.barplot(x=flight_data.index, y=flight_data['NK'])
 ````
-![download](https://github.com/user-attachments/assets/bc314479-8bc8-484f-99b8-2aeffb90e8bc)
 
 Count plots
 ````Python
 # bar plot that counts how many people there are in each Age group
 sns.countplot(x='Age_Group', data=X)
 ````
+![download](https://github.com/user-attachments/assets/e0e29783-e08c-4273-81d7-0272b688df91)
+
 
 Heat Map
 ````Python
